@@ -19,7 +19,9 @@ data class BookDetails(val id: String)
 fun AppNavHost(navController: NavHostController) {
     NavHost(navController = navController, startDestination = BookList) {
         composable<BookList> {
-            BookListScreen()
+            BookListScreen(onBookClick = { id ->
+                navController.navigate(BookDetails(id))
+            })
         }
 
         composable<BookDetails> { backStackEntry ->

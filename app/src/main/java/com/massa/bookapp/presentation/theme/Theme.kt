@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun bookappTheme(
+fun BookAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = true,
     content: @Composable () -> Unit

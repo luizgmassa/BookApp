@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.massa.bookapp.presentation.navigation.AppNavHost
 import com.massa.bookapp.presentation.navigation.BookList
-import com.massa.bookapp.presentation.theme.bookappTheme
+import com.massa.bookapp.presentation.theme.BookAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            bookappTheme {
+            BookAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     val navController = rememberNavController()
 
